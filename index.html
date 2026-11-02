@@ -234,7 +234,8 @@ footer nav{display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--g)}footer a
 <dialog id="pm" aria-labelledby="pt"><button class="btn dk x" id="pc">Close</button><div class="mb" id="pb"></div></dialog>
 
 <script>
-const RESUME="";
+const RESUME="https://drive.google.com/file/d/1ZKQZ3DcTKqADJ30sbQy7lwoHscSMltmO/view?usp=sharing";
+const RESUME_DL="https://drive.google.com/uc?export=download&id=1ZKQZ3DcTKqADJ30sbQy7lwoHscSMltmO";
 const SK={"Languages":["Python","Java","SQL"],"Core CS":["Data Structures and Algorithms","OOP","Operating Systems","Computer Networks","DBMS"],"Software Engineering":["REST APIs","Backend Development","System Integration","Debugging","Functional Testing","Secure Application Development"],"Frameworks & Tools":["FastAPI","Flask","React","Git","GitHub","Docker"],"AI & ML":["Machine Learning","NLP","Generative AI","LLMs","RAG","BERT","Sentence Transformers","FAISS"],"Cloud & IoT":["AWS","Firebase","ESP32","RFID","Sensors"],"Databases":["MySQL","PostgreSQL","MongoDB","Supabase"]};
 const CATS={all:"All Projects",ai:"AI & Gen AI",cloud:"Cloud & Security",iot:"IoT & Embedded",full:"Full Stack",data:"Data Analytics"};
 const GH="https://github.com/HariniMurali04/";
@@ -289,7 +290,11 @@ menu.addEventListener("click",e=>{if(e.target.closest("a"))menu.close()});
 
 document.querySelectorAll("[data-resume]").forEach(a=>a.addEventListener("click",e=>{
   e.preventDefault();
-  if(RESUME){window.open(RESUME,"_blank","noopener");return}
+  if(RESUME){
+  const isDl=a.textContent.includes("Download");
+  window.open(isDl?RESUME_DL:RESUME,"_blank","noopener");
+  return;
+}
   const n=$("#rnote");n.style.display="block";$("#resume").scrollIntoView({behavior:RM?"auto":"smooth"});
 }));
 
