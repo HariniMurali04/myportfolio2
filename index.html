@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harini P M | Software Engineering Portfolio</title>
+<meta name="description" content="Explore Harini P M’s software engineering projects across AI, cloud security, IoT, backend development, and full-stack applications.">
+<meta property="og:title" content="Harini P M | Software Engineering Portfolio">
+<meta property="og:description" content="Software engineering projects across AI, cloud security, IoT, backend development, and full-stack applications.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='41' font-size='24' font-weight='900' text-anchor='middle' fill='%23ff5f00' font-family='Arial'%3EHPM%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--k:#0a0a0a;--o:#ff5f00;--w:#f2efec;--g:#a3a3a3;--l:#2a2a2a;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+body{background:var(--k);color:#fff;font:15px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 5px var(--o)}
+.d{font-family:Anton,Impact,'Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;line-height:.95}
+.sec{padding:clamp(64px,10vw,130px) 5vw}
+.light{background:var(--w);color:var(--k)}
+.lab{color:var(--o);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px}
+h2{font-size:clamp(44px,8vw,110px);margin-bottom:34px}
+.mut{color:var(--g)}.light .mut{color:#555}
+header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(10px + env(safe-area-inset-top,0px)) 5vw 10px;background:rgba(10,10,10,.88);backdrop-filter:blur(10px)}
+.brand{font-size:22px;text-decoration:none}
+.hr{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--o);background:var(--o);color:var(--k);padding:9px 16px;font:400 15px Anton,Impact,sans-serif;text-transform:uppercase;text-decoration:none;cursor:pointer;letter-spacing:.03em;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--o)}
+.btn.out{background:transparent;color:#fff;border-color:#fff}.btn.out:hover{background:#fff;color:var(--k)}
+.btn.dk{background:var(--k);color:#fff;border-color:var(--k)}.btn.dk:hover{background:transparent;color:var(--k)}
+.ar{display:inline-grid;place-items:center;width:20px;height:20px;background:var(--k);color:#fff;font:600 13px Inter}
+.btn.dk .ar{background:var(--o)}
+.hero{background:var(--o);color:var(--k);min-height:100svh;padding:96px 5vw 40px;display:grid;grid-template-rows:auto 1fr auto;position:relative;overflow:hidden}
+.meta{display:flex;gap:32px;font-size:12px;font-weight:500;position:relative;z-index:1}
+.meta b{display:block;font-weight:500;opacity:.7;font-size:11px}
+.name{font-size:clamp(72px,19vw,300px);align-self:center;position:relative;z-index:1;background:linear-gradient(90deg,#0a0a0a 45%,#7a2d00 90%);-webkit-background-clip:text;background-clip:text;color:transparent;padding:.04em 0}
+.geo{position:absolute;right:-6vw;top:12%;width:min(52vw,560px);opacity:.28;pointer-events:none}
+.focus{position:absolute;right:5vw;top:42%;text-align:right;list-style:none;padding:0;font-size:14px;z-index:1}
+.focus li{padding:2px 0}.focus li:first-child{font-weight:600}.focus li:first-child::before{content:"●";font-size:8px;margin-right:8px;vertical-align:middle}
+.hb{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;position:relative;z-index:1}
+.hb p{max-width:430px;font-size:14px;line-height:1.55}
+.soc{display:flex;gap:8px;margin-top:16px}
+.soc a{width:30px;height:30px;background:var(--k);color:#fff;display:grid;place-items:center;font:600 11px Inter;text-decoration:none;border-radius:2px}
+.soc a:hover{background:#fff;color:var(--k)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.cta .link{font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.badge{display:inline-block;border:1px solid rgba(10,10,10,.5);padding:3px 12px;border-radius:99px;font-size:12px;margin-bottom:16px}
+.scrub{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(26px,4.4vw,58px);line-height:1.12;max-width:1100px}
+.scrub span{color:#4a4a4a;transition:color .25s}.scrub span.on{color:#fff}
+.edu{margin-top:48px;border:1px solid var(--l);padding:24px;max-width:520px}
+.edu h3{font-size:26px;margin:4px 0 6px}
+.tiles{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+.tiles svg{width:clamp(110px,16vw,190px);height:80px;border:1px solid var(--l);background:#111}
+.grp{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--l);border:1px solid var(--l)}
+.grp div{background:var(--k);padding:24px}
+.grp h3{font-size:24px;margin-bottom:14px;color:var(--o)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid #444;padding:3px 11px;border-radius:99px;font-size:13px;background:#141414}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));border:1px solid #2c2c2c}
+.step{padding:22px;min-height:290px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid #2c2c2c;transition:background .25s,color .25s;outline-offset:-4px}
+.step:hover,.step:focus-visible{background:var(--o);color:var(--k)}
+.step .d{font-size:34px}.step h3{font-size:26px;margin-bottom:8px}.step p{font-size:13px}
+.ctl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+.ctl input{flex:1;min-width:200px;background:#111;border:1px solid #444;color:#fff;padding:11px 14px;font:inherit}
+.fil{display:flex;gap:8px;flex-wrap:wrap}
+.fil button{background:transparent;color:#fff;border:1px solid #444;padding:8px 14px;font:inherit;font-size:13px;cursor:pointer}
+.fil button[aria-pressed=true]{background:var(--o);border-color:var(--o);color:var(--k);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:16px}
+.card{border:1px solid var(--l);padding:22px;display:flex;flex-direction:column;gap:12px;background:#0f0f0f;transition:border-color .2s}
+.card:hover{border-color:var(--o)}
+.card h3{font-size:27px;line-height:1.02}
+.st{font-size:12px;color:var(--o);font-weight:600}
+.card .acts{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:8px}
+.card .acts a.t{font-size:13px}
+.empty{padding:40px;border:1px dashed #555;text-align:center}
+dialog{background:#121212;color:#fff;border:1px solid var(--o);width:min(860px,94vw);max-height:90vh;padding:0;overflow:auto;margin:auto}
+dialog::backdrop{background:rgba(0,0,0,.8)}
+.mb{padding:clamp(20px,4vw,40px)}
+.mb h3{font-size:clamp(32px,5vw,52px);margin:6px 0 18px}
+.mb h4{font:600 12px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--o);margin:22px 0 6px}
+.mb ul{padding-left:18px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.flow span{border:1px solid var(--o);padding:5px 10px;font-size:13px}.flow i{color:var(--o);font-style:normal}
+.x{position:sticky;top:0;float:right;margin:12px}
+.rows{border:1px solid var(--l);border-radius:12px;overflow:hidden}
+.row{display:grid;grid-template-columns:1.2fr 2.2fr 1fr;gap:16px;padding:16px 20px;border-top:1px solid var(--l);transition:background .2s}
+.row:first-child{border-top:0;font-size:11px;color:var(--g);letter-spacing:.08em;text-transform:uppercase}
+.row:not(:first-child):hover{background:#161616}
+.hk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:16px}
+.hk div{border:1px solid var(--l);padding:26px}
+.hk h3{font-size:32px;margin-bottom:8px}
+.hk dt{font-size:11px;color:var(--o);text-transform:uppercase;letter-spacing:.08em;margin-top:12px;font-weight:600}.hk dd{margin:0}
+.tl{background:#fff;border-radius:22px;padding:clamp(18px,4vw,40px);max-width:880px;margin:0 auto;box-shadow:0 18px 50px rgba(0,0,0,.08)}
+.tl li{list-style:none;display:grid;grid-template-columns:1fr 18px 1.4fr;gap:18px;padding:14px 0}
+.tl li>b{text-align:right}.tl li>b small{display:block;font-weight:400;color:#666}
+.tl li::before{content:"";grid-column:2;grid-row:1;width:12px;height:12px;border-radius:50%;background:var(--o);margin-top:6px}
+.tl li>b{grid-column:1;grid-row:1}.tl li>span{grid-column:3;grid-row:1;font-size:14px;color:#444}
+.tl ul{padding:0}
+.big{font-size:clamp(60px,15vw,230px);text-decoration:none;display:block;color:#fff}
+.big:hover{color:var(--o)}
+.note{margin-top:14px;padding:12px 16px;border-left:4px solid var(--o);background:#1a1a1a;display:none;max-width:620px}
+.cl{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+footer{padding:36px 5vw calc(36px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--l);display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap;font-size:14px}
+footer nav{display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--g)}footer a:hover{color:var(--o)}
+#menu{background:var(--o);color:var(--k);width:100vw;height:100vh;max-width:none;max-height:none;border:0}
+#menu nav{display:flex;flex-direction:column;justify-content:center;min-height:100%;padding:70px 5vw}
+#menu a{font-size:clamp(42px,9vw,96px);text-decoration:none;display:block}
+#menu a:hover{color:#fff}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(max-width:760px){.focus{display:none}.row{grid-template-columns:1fr;gap:4px}.row:first-child{display:none}.tl li{grid-template-columns:1fr}.tl li>b,.tl li>span{grid-column:1;grid-row:auto;text-align:left}.tl li::before{display:none}.hr .btn.hide{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand d" href="#home">Harini P M</a>
+  <div class="hr">
+    <a class="btn out hide" href="#resume" data-resume>View Resume</a>
+    <button class="btn" id="mo" aria-haspopup="dialog">Menu</button>
+  </div>
+</header>
+
+<dialog id="menu" aria-label="Site navigation">
+  <button class="btn dk x" id="mc">Close</button>
+  <nav class="d">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#hackathons">Hackathons</a><a href="#certifications">Certifications</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </nav>
+</dialog>
+
+<main>
+<section class="hero" id="home">
+  <div class="meta"><div><b>Studying in</b>Vellore, India</div><div><b>Local time (IST)</b><span id="clk">--:--:--</span></div></div>
+  <svg class="geo" viewBox="0 0 200 200" fill="none" stroke="#0a0a0a" stroke-width="1.5" aria-hidden="true"><rect x="10" y="10" width="180" height="180"/><rect x="35" y="35" width="130" height="130"/><rect x="60" y="60" width="80" height="80"/><rect x="85" y="85" width="30" height="30" fill="#0a0a0a"/><path d="M10 10L190 190M190 10L10 190"/></svg>
+  <h1 class="name d">Harini<br>P M</h1>
+  <ul class="focus" aria-label="Focus areas"><li>AI Engineering</li><li>Backend &amp; APIs</li><li>Cloud Security</li><li>IoT &amp; Embedded</li><li>Full-Stack</li></ul>
+  <div class="hb">
+    <div>
+      <span class="badge">Open to internship and graduate opportunities</span>
+      <p><strong>Software Engineering Student | AI, Cloud &amp; Systems.</strong> I’m a final-year Integrated M.Tech Software Engineering student at VIT Vellore who enjoys building practical software solutions across AI, cloud technologies, backend systems, and IoT. I like understanding how systems work, solving technical problems, and turning ideas into useful applications.</p>
+      <div class="soc"><a href="https://github.com/HariniMurali04" target="_blank" rel="noopener" aria-label="GitHub profile">GH</a><a href="https://linkedin.com/in/harini-p-m-527469313" target="_blank" rel="noopener" aria-label="LinkedIn profile">in</a><a href="mailto:harinipm4@gmail.com" aria-label="Email Harini">@</a></div>
+    </div>
+    <div class="cta"><a class="btn dk" href="#projects">Explore My Projects <span class="ar">↗</span></a><a class="btn out" style="color:var(--k);border-color:var(--k)" href="#resume" data-resume>View Resume</a><a class="link" href="#contact">Get in Touch</a></div>
+  </div>
+</section>
+
+<section class="sec" id="about">
+  <p class="lab">About me</p>
+  <p class="scrub" id="scrub">I’m a Software Engineering student at VIT Vellore with an interest in building reliable, useful software. My projects span AI-powered developer tools, secure application development, cloud security, and IoT-based systems. Through them I’ve explored how components interact, how data moves through applications, and how software solves practical problems.</p>
+  <p class="mut" style="max-width:640px;margin-top:28px">I’m interested in opportunities where I can strengthen my engineering fundamentals, investigate challenging problems, collaborate with other developers, and keep learning by building real systems.</p>
+  <div class="edu rv"><p class="lab">Education</p><h3 class="d">Vellore Institute of Technology</h3><p>Integrated M.Tech in Software Engineering</p><p class="mut">September 2022 – May 2027 · CGPA: 8.36/10</p></div>
+  <div class="tiles" aria-hidden="true">
+    <svg viewBox="0 0 190 80"><g stroke="#ff5f00" fill="none"><rect x="14" y="26" width="40" height="28"/><rect x="75" y="12" width="40" height="22"/><rect x="75" y="46" width="40" height="22"/><rect x="136" y="26" width="40" height="28"/><path d="M54 40h21M115 23l21 17M115 57l21-17"/></g></svg>
+    <svg viewBox="0 0 190 80"><g fill="#ff5f00"><rect x="20" y="50" width="16" height="20"/><rect x="48" y="36" width="16" height="34"/><rect x="76" y="44" width="16" height="26"/><rect x="104" y="20" width="16" height="50"/><rect x="132" y="30" width="16" height="40"/></g></svg>
+    <svg viewBox="0 0 190 80"><g stroke="#888" fill="none"><circle cx="40" cy="40" r="22"/><circle cx="95" cy="40" r="22"/><circle cx="150" cy="40" r="22"/></g></svg>
+  </div>
+</section>
+
+<section class="sec" id="skills" style="padding-top:0">
+  <p class="lab">Technical skills</p><h2 class="d">Tools I work with</h2>
+  <div class="grp" id="skillgrid"></div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <p class="lab">How I work</p><h2 class="d">Four steps, every project</h2>
+  <div class="steps">
+    <div class="step" tabindex="0"><span class="d">1.</span><div><h3 class="d">Understand</h3><p>Break the problem down. Clarify inputs, outputs, and constraints.</p></div></div>
+    <div class="step" tabindex="0"><span class="d">2.</span><div><h3 class="d">Design</h3><p>Plan the architecture, data flow, and component boundaries.</p></div></div>
+    <div class="step" tabindex="0"><span class="d">3.</span><div><h3 class="d">Build</h3><p>Implement with clean APIs and integrations between parts.</p></div></div>
+    <div class="step" tabindex="0"><span class="d">4.</span><div><h3 class="d">Test &amp; harden</h3><p>Debug, test, and tighten security and reliability.</p></div></div>
+  </div>
+</section>
+
+<section class="light sec" id="projects">
+  <p class="lab">Projects</p><h2 class="d">What I build</h2>
+  <div class="ctl"><input id="q" type="search" placeholder="Search projects or technologies" aria-label="Search projects" style="background:#fff;color:#0a0a0a;border-color:#bbb"><div class="fil" id="fil" role="group" aria-label="Filter by category"></div></div>
+  <p class="mut" id="cnt" aria-live="polite" style="margin-bottom:16px"></p>
+  <div class="grid" id="grid"></div>
+  <h3 class="d" style="font-size:34px;margin:56px 0 10px">Explorations</h3>
+  <p class="mut" style="max-width:640px">Future ideas, not completed projects: AI agents, patent analysis, novelty scoring, and MCP-based assistants.</p>
+</section>
+
+<section class="sec" id="hackathons">
+  <p class="lab">Hackathons</p><h2 class="d">Hackathons<br><span style="color:#777">&amp; builds</span></h2>
+  <div class="hk">
+    <div class="rv"><h3 class="d">ShipSafe AI</h3><p class="st">Amazon Developer Hackathon 2026 · Alexa+ track</p>
+      <dl><dt>Problem</dt><dd>Unsafe S3 configurations can ship unnoticed.</dd><dt>Approach</dt><dd>FastAPI backend with deterministic rule-based S3 checks, explanations (optional Amazon Bedrock), and a browser-based Alexa+-style assistant. Docker setup, GitHub Actions tests.</dd><dt>Development observation</dt><dd>14 rules; one insecure demo configuration produced 7 risks. Not a general detection guarantee.</dd><dt>My contribution</dt><dd>Details not yet supplied.</dd><dt>Participation</dt><dd>Participant. No award or ranking claimed.</dd></dl>
+      <p style="margin-top:16px"><a class="btn" href="https://github.com/HariniMurali04/shipsafe-ai" target="_blank" rel="noopener">Repository</a></p></div>
+    <div class="rv"><h3 class="d">FinGuard AI</h3><p class="st">Hackathon-oriented project · status unverified</p>
+      <dl><dt>Problem</dt><dd>AI assistants that call external tools can take unsafe financial or shopping actions.</dd><dt>Approach</dt><dd>The LLM proposes an action; an independent backend policy layer allows, holds, or blocks it, then logs and explains the decision.</dd><dt>My contribution</dt><dd>Details not yet supplied.</dd><dt>Participation</dt><dd>Not verified. No award or ranking claimed.</dd></dl>
+      <p class="mut" style="margin-top:16px">No public repository link supplied yet.</p></div>
+  </div>
+</section>
+
+<section class="light sec" id="certifications">
+  <p class="lab">Certifications</p><h2 class="d">Certified<br><span style="color:#777">&amp; learning</span></h2>
+  <div class="rows" style="background:#fff;border-color:#ddd;color:var(--k)">
+    <div class="row" style="color:#666;border-color:#ddd"><span>Issuer</span><span>Certification</span><span>Year</span></div>
+    <div class="row" style="border-color:#ddd"><span>Amazon Web Services</span><span>AWS Certified Cloud Practitioner</span><span>2026</span></div>
+    <div class="row" style="border-color:#ddd"><span>Microsoft &amp; LinkedIn Learning</span><span>Career Essentials in Generative AI</span><span>—</span></div>
+    <div class="row" style="border-color:#ddd"><span>VIT</span><span>Data Science, Value Added Course (VAC1827)</span><span>—</span></div>
+    <div class="row" style="border-color:#ddd"><span>Great Learning</span><span>Data Structures and Algorithms in Java</span><span>—</span></div>
+  </div>
+  <h3 class="d" style="font-size:40px;margin:70px 0 22px;text-align:center">Learning journey</h3>
+  <div class="tl"><ul>
+    <li><b>Sept 2022<small>VIT Vellore</small></b><span>Started the Integrated M.Tech in Software Engineering.</span></li>
+    <li><b>Projects<small>IoT, AI, backend, cloud, full stack</small></b><span>Built projects across RAG/LLM tools, secure file sharing, NLP, analytics, IoT security, and inventory reservations.</span></li>
+    <li><b>2026<small>Cloud and hackathon</small></b><span>AWS Certified Cloud Practitioner. Built ShipSafe AI for the Amazon Developer Hackathon 2026.</span></li>
+    <li><b>May 2027<small>Expected</small></b><span>Expected graduation.</span></li>
+  </ul></div>
+</section>
+
+<section class="sec" id="resume">
+  <p class="lab">Resume</p><h2 class="d">Resume</h2>
+  <div class="cta"><a class="btn" href="#resume" data-resume>View Resume <span class="ar" style="background:var(--k)">↗</span></a><a class="btn out" href="#resume" data-resume>Download Resume</a></div>
+  <p class="note" id="rnote" role="status">The resume PDF isn’t attached to this preview yet. Place it at <b>/public/Harini_PM_Resume.pdf</b> in the project and set <b>RESUME</b> in the page config; both buttons will then open and download it.</p>
+</section>
+
+<section class="sec" id="contact" style="background:var(--o);color:var(--k)">
+  <p class="lab" style="color:var(--k)">Contact</p>
+  <a class="big d" style="color:var(--k)" href="mailto:harinipm4@gmail.com?subject=Hello%20Harini">Let’s talk</a>
+  <p style="margin-top:18px;max-width:560px">Looking for an intern or graduate engineer, or want to talk about a project? Email me. The link opens your email app.</p>
+  <div class="cl"><a class="btn dk" href="mailto:harinipm4@gmail.com">harinipm4@gmail.com</a><button class="btn dk" id="cp">Copy Email</button><a class="btn out" style="color:var(--k);border-color:var(--k)" href="https://github.com/HariniMurali04" target="_blank" rel="noopener">GitHub</a><a class="btn out" style="color:var(--k);border-color:var(--k)" href="https://linkedin.com/in/harini-p-m-527469313" target="_blank" rel="noopener">LinkedIn</a></div>
+  <p id="cps" role="status" aria-live="polite" style="margin-top:12px;font-weight:600;min-height:1.5em"></p>
+</section>
+</main>
+
+<footer>
+  <div><strong class="d" style="font-size:22px">Harini P M</strong><p class="mut">Building reliable software across AI, cloud, and IoT.</p><p class="mut">© <span id="yr"></span> Harini P M</p></div>
+  <nav aria-label="Footer"><a href="#about">About</a><a href="#projects">Projects</a><a href="#hackathons">Hackathons</a><a href="#contact">Contact</a><a href="https://github.com/HariniMurali04" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/harini-p-m-527469313" target="_blank" rel="noopener">LinkedIn</a></nav>
+</footer>
+
+<dialog id="pm" aria-labelledby="pt"><button class="btn dk x" id="pc">Close</button><div class="mb" id="pb"></div></dialog>
+
+<script>
+const RESUME="";
+const SK={"Languages":["Python","Java","SQL"],"Core CS":["Data Structures and Algorithms","OOP","Operating Systems","Computer Networks","DBMS"],"Software Engineering":["REST APIs","Backend Development","System Integration","Debugging","Functional Testing","Secure Application Development"],"Frameworks & Tools":["FastAPI","Flask","React","Git","GitHub","Docker"],"AI & ML":["Machine Learning","NLP","Generative AI","LLMs","RAG","BERT","Sentence Transformers","FAISS"],"Cloud & IoT":["AWS","Firebase","ESP32","RFID","Sensors"],"Databases":["MySQL","PostgreSQL","MongoDB","Supabase"]};
+const CATS={all:"All Projects",ai:"AI & Gen AI",cloud:"Cloud & Security",iot:"IoT & Embedded",full:"Full Stack",data:"Data Analytics"};
+const GH="https://github.com/HariniMurali04/";
+const NL="Not yet supplied. Add your own reflection in the project data.";
+const P=[
+{n:"Smart Warehouse Security and Monitoring System",c:["iot"],s:"Built · details unverified",d:"IoT warehouse security combining RFID access control, sensor monitoring, and cloud connectivity.",t:["ESP32","RFID","Sensors","Servo motor","Firebase"],r:GH+"smart-warehouse-iot-security-system",prob:"Warehouses need controlled access and continuous monitoring of conditions and intrusions.",obj:"Combine access control, sensor-based monitoring, and cloud connectivity in one system.",flow:["RFID reader + sensors","ESP32 controller","Servo door lock","Firebase monitoring"],feat:["RFID-based access control","Environmental sensors","Intrusion detection","Servo-controlled door lock","Firebase cloud monitoring"],imp:"ESP32-based embedded controller connecting hardware inputs to access-control logic and cloud monitoring. Which parts were tested on hardware is unverified.",ch:"Processing hardware inputs, coordinating multiple components, and communicating between the embedded system and cloud services. Protocols and timing behaviour are unverified."},
+{n:"Repository AI Assistant",c:["ai","full"],s:"Built · tested in development",d:"Explore uploaded repositories and documents through retrieval and context-aware LLM answers.",t:["Python","FastAPI","React","Vite","Sentence Transformers","FAISS","LLMs","Docker"],r:GH+"Repository-ai-assistant",prob:"General-purpose models don’t know the contents of a particular repository.",obj:"Answer questions about uploaded files using retrieved context instead of the model’s general knowledge alone.",flow:["Upload files","Parse content","Chunk text","Embed","FAISS retrieval","LLM with context","Answer"],feat:["React + Vite frontend","FastAPI backend","Source-file and document parsing","Semantic retrieval with FAISS","Chat history"],imp:"RAG pipeline from parsing to retrieval to generation. A development test used a collection of 16 files and 61 chunks. This is an observation, not a benchmark. The current LLM provider is unverified.",ch:"Chunking content for useful retrieval and passing the right context to the LLM across the API boundary."},
+{n:"Secure File Storage and Sharing System",c:["cloud"],s:"Built · repository not linked",d:"Secure file management with encrypted storage, approval-based sharing, and audit logging.",t:["Python","Flask","MongoDB","AES"],r:"",prob:"Users need to store files and share them without giving up control over access.",obj:"Support uploads, retrieval, and sharing with sender-approved permissions.",flow:["Upload","AES-encrypt file content","Store in MongoDB","Share request","Sender approves / rejects","Audit log"],feat:["File upload and retrieval","Sharing requests with approval or rejection","Password hashing","AES encryption of file content","Permission management","Audit logging"],imp:"Flask backend. MongoDB holds user data, file metadata, and sharing workflows. Passwords are hashed (one-way); file content is encrypted (reversible with the key). Metadata encryption is not claimed. Not security-audited, so not production-grade.",ch:"Designing the sharing workflow and permission checks."},
+{n:"Sentiment Analysis on Social Media Data",c:["ai","data"],s:"Built · results unverified",d:"Sentiment classification pipeline for social-media text, with classical ML and BERT, served through FastAPI.",t:["Python","PySpark","FastAPI","BERT","TF-IDF","Naive Bayes","Logistic Regression","Decision Tree"],r:GH+"social-media-sentiment-analysis",prob:"Turn raw social-media text into usable sentiment signals.",obj:"Compare traditional classifiers with transformer-based contextual classification.",flow:["Ingest text","Clean and transform","Features (TF-IDF)","Classify","BERT analysis","FastAPI prediction"],feat:["Data cleaning and transformation","Feature engineering","Classical models and BERT","FastAPI prediction endpoints","Sentiment140 dataset"],imp:"Traditional models use features like TF-IDF; BERT reads each word in its sentence context. No accuracy, F1, latency, or dataset-size claims are made here.",ch:"Moving from raw text to model inputs and exposing models through an API."},
+{n:"Financial Performance Dashboard",c:["data"],s:"Built · details unverified",d:"Interactive dashboard presenting forecast and financial performance information.",t:["Power BI","SQL","Power Query","DAX"],r:"",prob:"Unverified. Slug: forecast-performance-dashboard.",obj:"Present financial or forecasting information interactively.",flow:["Data source","Power Query","SQL / DAX","Dashboard"],feat:["Data transformation","SQL","Dashboard design"],imp:"Unverified. Metrics and data sources are not described until the project files are checked.",ch:"Unverified."},
+{n:"Allo Inventory Reservation System",c:["full"],s:"Deployed",d:"Multi-warehouse inventory reservations with a 10-minute reservation expiry.",t:["Next.js","TypeScript","Tailwind CSS","Prisma","Supabase","PostgreSQL"],r:"",l:"https://allo-inventory-reservation-system-zeta.vercel.app",prob:"Stock held for a customer should be reserved, and released if it isn’t claimed.",obj:"Reserve inventory across warehouses and expire reservations after 10 minutes.",flow:["Choose warehouse stock","Create reservation","10-minute window","Expires or completes"],feat:["Multi-warehouse inventory","Reservations with 10-minute expiry","Prisma + PostgreSQL via Supabase"],imp:"Full-stack app with database integration and reservation-state management. Payments, distributed locking, and transaction isolation are not claimed.",ch:"Managing reservation state and expiry. Specifics unverified."},
+{n:"Failure Forensics Tool for AI Pipelines in Legal Contract Analysis",c:["ai"],s:"In development · scope unverified",d:"Traces failures through a six-stage AI pipeline that analyses legal contracts.",t:["LLMs","Sentence embeddings","Rule-based checks","Web UI"],r:GH+"Failure-Forensics-Tool-for-AI-Pipelines-in-Legal-Contract-Analysis",prob:"When an AI pipeline gives a wrong summary, it’s hard to tell which stage went wrong first.",obj:"Make failures traceable and investigate how errors propagate.",flow:["Contract input","Preprocessing","Clause extraction","LLM analysis","Risk and obligations","Structured summary"],feat:["Stage input/output recording","Prompt, evidence, and confidence tracking","Semantic provenance","Embedding similarity","Rule checks on numbers, dates, modal verbs","Earliest-divergence detection"],imp:"Design direction: traceability across stages. Planned UI areas: Overview, Contracts, Pipeline Trace, Failures, Forensic Reports, Human Review, Regression. Which are implemented, experimental, or planned is unverified.",ch:"Linking contract text to clauses, claims, and summaries so divergence can be located."},
+{n:"ShipSafe AI – Cloud Security Advisor",c:["cloud","ai"],s:"Hackathon build",d:"Checks S3 configurations against deterministic security rules and explains the findings.",t:["FastAPI","AWS S3 rules","Amazon Bedrock (optional)","Docker","GitHub Actions"],r:GH+"shipsafe-ai",prob:"Unsafe S3 settings such as public access, weak policies, missing encryption, or missing logging can ship unnoticed.",obj:"Secure every change before it ships, with clear explanations.",flow:["S3 configuration","Deterministic rules","Findings","Explanation (optional LLM)","Alexa+-style assistant"],feat:["Rule-based S3 analysis","Findings and verification endpoints","Browser frontend","Docker setup","GitHub Actions tests"],imp:"Rules decide what’s unsafe, so results are repeatable; an LLM only explains. In development, 14 rules ran and one insecure demo produced 7 risks (not a detection guarantee). Live AWS account scanning and real Alexa+ integration are not claimed.",ch:"Writing precise rules and keeping explanations separate from decisions."},
+{n:"FinGuard AI: Secure MCP Assistant",c:["ai","cloud"],s:"Concept · implementation unverified",d:"Policy-enforced assistant: the LLM proposes actions, a trusted backend decides.",t:["MCP","LLMs","Policy engine","Audit logging"],r:"",prob:"AI systems that use external tools can take financial or shopping actions they shouldn’t.",obj:"Keep security decisions out of the LLM by enforcing policy in an independent backend layer.",flow:["User request","AI assistant","Proposed action","Policy enforcement","Allow / Hold / Block","Authorized tool","Audit log + explanation"],feat:["Spending limits and permission checks","Confirmation for sensitive actions","Audit trail","Explanations of decisions"],imp:"Design direction. The LLM is not treated as a security boundary. Which features exist is unverified.",ch:"Validating proposed actions independently of the model."}
+];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+$("#skillgrid").innerHTML=Object.entries(SK).map(([k,v])=>`<div><h3 class="d">${esc(k)}</h3><div class="tags">${v.map(x=>`<span>${esc(x)}</span>`).join("")}</div></div>`).join("");
+
+let cat="all";
+const fil=$("#fil");
+fil.innerHTML=Object.entries(CATS).map(([k,v])=>`<button data-c="${k}" aria-pressed="${k==="all"}" style="${'color:#0a0a0a;border-color:#999'}">${v}</button>`).join("");
+fil.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;cat=b.dataset.c;fil.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render()});
+$("#q").addEventListener("input",render);
+
+function render(){
+  const q=$("#q").value.trim().toLowerCase();
+  const list=P.map((p,i)=>[p,i]).filter(([p])=>(cat==="all"||p.c.includes(cat))&&(!q||(p.n+p.d+p.t.join(" ")).toLowerCase().includes(q)));
+  $("#cnt").textContent=list.length+" of "+P.length+" projects";
+  $("#grid").innerHTML=list.length?list.map(([p,i])=>`<article class="card" style="background:#0f0f0f;color:#fff"><span class="st">${esc(p.s)}</span><h3 class="d">${esc(p.n)}</h3><p class="mut" style="color:#bbb">${esc(p.d)}</p><p class="mut" style="font-size:12px;color:#888">${p.c.map(c=>CATS[c]).join(" / ")}</p><div class="tags">${p.t.map(x=>`<span>${esc(x)}</span>`).join("")}</div><div class="acts"><button class="btn" data-i="${i}">View Details</button>${p.r?`<a class="t" href="${p.r}" target="_blank" rel="noopener">GitHub</a>`:`<span class="mut" style="font-size:12px;color:#888">Repo link not supplied</span>`}${p.l?`<a class="t" href="${p.l}" target="_blank" rel="noopener">Live demo</a>`:""}</div></article>`).join(""):`<div class="empty" style="color:#333;border-color:#999">No projects match. Clear the search or pick All Projects.</div>`;
+}
+$("#grid").addEventListener("click",e=>{const b=e.target.closest("button[data-i]");if(!b)return;openP(P[b.dataset.i])});
+
+function openP(p){
+  const li=a=>`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+  $("#pb").innerHTML=`<span class="st">${esc(p.s)}</span><h3 class="d" id="pt">${esc(p.n)}</h3>
+  <h4>Problem</h4><p>${esc(p.prob)}</p><h4>Objective</h4><p>${esc(p.obj)}</p>
+  <h4>Architecture</h4><div class="flow">${p.flow.map((x,i)=>(i?"<i>→</i>":"")+`<span>${esc(x)}</span>`).join("")}</div>
+  <h4>Technology stack</h4><div class="tags">${p.t.map(x=>`<span>${esc(x)}</span>`).join("")}</div>
+  <h4>Key features</h4>${li(p.feat)}<h4>My implementation</h4><p>${esc(p.imp)}</p><h4>Engineering challenges</h4><p>${esc(p.ch)}</p><h4>What I learned</h4><p class="mut">${NL}</p>
+  <h4>Links</h4><div class="cta">${p.r?`<a class="btn" href="${p.r}" target="_blank" rel="noopener">Repository</a>`:`<span class="mut">No repository link supplied</span>`}${p.l?`<a class="btn out" href="${p.l}" target="_blank" rel="noopener">Live demo</a>`:""}</div>`;
+  $("#pm").showModal();
+}
+$("#pc").onclick=()=>$("#pm").close();
+$("#pm").addEventListener("click",e=>{if(e.target===e.currentTarget)e.currentTarget.close()});
+
+const menu=$("#menu");
+$("#mo").onclick=()=>menu.showModal();$("#mc").onclick=()=>menu.close();
+menu.addEventListener("click",e=>{if(e.target.closest("a"))menu.close()});
+
+document.querySelectorAll("[data-resume]").forEach(a=>a.addEventListener("click",e=>{
+  e.preventDefault();
+  if(RESUME){window.open(RESUME,"_blank","noopener");return}
+  const n=$("#rnote");n.style.display="block";$("#resume").scrollIntoView({behavior:RM?"auto":"smooth"});
+}));
+
+$("#cp").onclick=async()=>{
+  const m="harinipm4@gmail.com",s=$("#cps");
+  try{await navigator.clipboard.writeText(m);s.textContent="Email copied to clipboard."}
+  catch(_){try{const t=document.createElement("textarea");t.value=m;document.body.appendChild(t);t.select();const ok=document.execCommand("copy");t.remove();s.textContent=ok?"Email copied to clipboard.":"Couldn’t copy. Select it manually: "+m}catch(__){s.textContent="Couldn’t copy. Select it manually: "+m}}
+};
+
+const sc=$("#scrub");sc.innerHTML=sc.textContent.split(" ").map(w=>`<span>${esc(w)}</span>`).join(" ");
+const ws=[...sc.querySelectorAll("span")];
+function scrub(){const r=sc.getBoundingClientRect(),vh=innerHeight;const p=RM?1:Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.2)));const n=Math.round(p*ws.length);ws.forEach((w,i)=>w.classList.toggle("on",i<n))}
+addEventListener("scroll",scrub,{passive:true});addEventListener("resize",scrub);scrub();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+const fmt=new Intl.DateTimeFormat("en-IN",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:true});
+const tick=()=>$("#clk").textContent=fmt.format(new Date());tick();setInterval(tick,1000);
+$("#yr").textContent=new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
